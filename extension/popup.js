@@ -28,8 +28,9 @@ function setPageBackgroundColor() {
   document.querySelectorAll('.collection-list__product-tile .product-tile__image-line')[0].appendChild(elemDiv)
 
   // http://postman-echo.com/get?aaa=AAA
+  // https://www.random.org/integers/?num=1&min=1&max=6&col=1&base=10&format=plain&rnd=new
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://postman-echo.com/get?aaa=AAA", true);
+  xhr.open("GET", "https://www.random.org/integers/?num=1&min=1&max=6&col=1&base=10&format=plain&rnd=new", true);
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4) {
       // JSON.parse does not evaluate the attacker's scripts.
