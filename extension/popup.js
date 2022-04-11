@@ -21,6 +21,5 @@ function setPageBackgroundColor() {
   chrome.storage.sync.get("color", ({ color }) => {
     document.body.style.backgroundColor = color;
   });
-  alert('here')
-  console.log(jQuery('.collection-list__product-tile .product-tile__image-line').length)
+  console.log(document.querySelectorAll('.collection-list__product-tile .product-tile__image-line').length)
 }
