@@ -27,4 +27,6 @@ function setPageBackgroundColor() {
   elemDiv.innerHTML = 'VENDOR NAME XYZ APPAREL'; 
   document.querySelectorAll('.collection-list__product-tile .product-tile__image-line')[0].appendChild(elemDiv)
 
+  // http://postman-echo.com/get?aaa=AAA
+  var xhr = new XMLHttpRequest();
 }
