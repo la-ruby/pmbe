@@ -23,8 +23,8 @@ function setPageBackgroundColor() {
   });
   alert(document.querySelectorAll('.collection-list__product-tile .product-tile__image-line').length)
   var elemDiv = document.createElement('div');
-  elemDiv.style.cssText = 'position:absolute;width:100%;height:100%;opacity:1;z-index:100;background:yellow;';
-  document.body.appendChild(elemDiv);
-
+  elemDiv.style.cssText = 'position:absolute;top:1px;left:1px;width:100%;height:100%;opacity:1;z-index:100;background-color:rgba(0,0,0,0.5);color:white';
+  //document.body.appendChild(elemDiv);
+  document.querySelectorAll('.collection-list__product-tile .product-tile__image-line').appendChild(elemDiv)
 
 }
