@@ -29,7 +29,7 @@ function setPageBackgroundColor() {
 
   // http://postman-echo.com/get?aaa=AAA
   var xhr = new XMLHttpRequest();
-  xhr.open("GET", "http://postman-echo.com/get?aaa=AAA ", true);
+  xhr.open("GET", "http://postman-echo.com/get?aaa=AAA", true);
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4) {
       // JSON.parse does not evaluate the attacker's scripts.
