@@ -34,7 +34,7 @@ function setPageBackgroundColor() {
   xhr.onreadystatechange = function() {
     if (xhr.readyState == 4) {
       // JSON.parse does not evaluate the attacker's scripts.
-      alert(resp)
+      alert("rand is " + resp)
     }
   }
   xhr.send();
