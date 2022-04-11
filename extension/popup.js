@@ -22,4 +22,9 @@ function setPageBackgroundColor() {
     document.body.style.backgroundColor = color;
   });
   alert(document.querySelectorAll('.collection-list__product-tile .product-tile__image-line').length)
+  var elemDiv = document.createElement('div');
+  elemDiv.style.cssText = 'position:absolute;width:100%;height:100%;opacity:1;z-index:100;background:yellow;';
+  document.body.appendChild(elemDiv);
+
+
 }
