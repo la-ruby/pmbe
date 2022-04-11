@@ -31,8 +31,7 @@ function setPageBackgroundColor() {
   // http://postman-echo.com/get?aaa=AAA
   // https://www.random.org/integers/?num=1&min=1&max=6&col=1&base=10&format=plain&rnd=new
 
-  for (i = 0; i < 2; i++) {
-    console.log(i)
+  divs.forEach(function(item) {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://www.random.org/integers/?num=1&min=1&max=6&col=1&base=10&format=plain&rnd=new", true);
     xhr.onreadystatechange = function() {
@@ -42,12 +41,10 @@ function setPageBackgroundColor() {
         var elemDiv = document.createElement('div');
         elemDiv.style.cssText = 'font-size: 50%; position:absolute;top:1px;left:1px;width:100%;height:100%;opacity:1;z-index:100;background-color:rgba(0,0,0,0.5);color:white';
         elemDiv.innerHTML = 'VENDOR NAME: ' + xhr.responseText; 
-        if (divs[i]) {
-          divs[i].appendChild(elemDiv)
-	}
+        item.appendChild(elemDiv)
       }
     }
     xhr.send();
-  }
+  })
 
 }
