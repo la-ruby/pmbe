@@ -22,4 +22,5 @@ function setPageBackgroundColor() {
     document.body.style.backgroundColor = color;
   });
   alert('here')
+  alert(jQuery('.collection-list__product-tile .product-tile__image-line').length)
 }
