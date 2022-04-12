@@ -1,6 +1,8 @@
 setInterval(function () {
   // console.log("D3BUG setInterval fired")
-  let divs = document.querySelectorAll('.collection-list__product-tile')
+  // let divs = document.querySelectorAll('.collection-list__product-tile')
+  let divs = document.querySelectorAll('.product-tile__image-link')
+  
   divs.forEach(function(item) {
     if (item.getAttribute('data-pmbe') == '1') {
       // console.log("skip")
