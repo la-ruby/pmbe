@@ -31,6 +31,14 @@
       "js": [
         "content_script.js"
       ]
+    },
+    {
+      "matches": [
+        "https://www.fashionnova.com/*"
+      ],
+      "js": [
+        "jquery.js"
+      ]
     }
   ]
 }
