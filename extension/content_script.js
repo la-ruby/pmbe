@@ -4,7 +4,7 @@ setInterval(function () {
     // console.log("D3BUG overlaying")
     item.classList.add('pmbe')
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://localhost/products/U3R1Y2sgSW4gVGhlIENpdHkgU2F0aW4gTWlkaSBEcmVzcyAtIFllbGxvdw==?token=a", true);
+    xhr.open("GET", "http://localhost:2998/products/U3R1Y2sgSW4gVGhlIENpdHkgU2F0aW4gTWlkaSBEcmVzcyAtIFllbGxvdw==?token=a", true);
     xhr.onreadystatechange = function() {
       if (xhr.readyState == 4) {
         var elemDiv = document.createElement('div');
