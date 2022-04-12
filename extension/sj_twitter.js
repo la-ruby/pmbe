@@ -1,7 +1,7 @@
 // setInterval(function () {
   // console.log("D3BUG timer")
   let divs = document.querySelectorAll('.collection-list__product-tile')
-    debugger
+  debugger
   divs.forEach(function(item) {
 
     return
