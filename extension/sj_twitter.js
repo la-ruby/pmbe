@@ -1,11 +1,11 @@
 // setInterval(function () {
   // console.log("D3BUG timer")
-  debugger
   let divs = document.querySelectorAll('.collection-list__product-tile')
-
   divs.forEach(function(item) {
-
-    return
+    if (item.getAttribute('data-pmbe') == '1') {
+      return
+    }
+    item.setAttribute('data-pmbe', '1')
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://pmbe-backend.herokuapp.com/experiment", true);
     xhr.onreadystatechange = function() {
