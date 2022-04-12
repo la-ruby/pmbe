@@ -1,14 +1,11 @@
 setInterval(function () {
-  // console.log("D3BUG setInterval fired")
+  console.log("D3BUG setInterval fired")
   // let divs = document.querySelectorAll('.collection-list__product-tile')
-  let divs = document.querySelectorAll('.product-tile__image-link')
+  let divs = document.querySelectorAll('.product-tile__image-link:not(.pmbe)')
   
   divs.forEach(function(item) {
-    if (item.getAttribute('data-pmbe') == '1') {
-      // console.log("skip")
-      return
-    }
-    // console.log("D3BUG inside")
+    item.classList.add('pmbe')
+    console.log("D3BUG inside")
     item.setAttribute('data-pmbe', '1')
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://pmbe-backend.herokuapp.com/experiment", true);
