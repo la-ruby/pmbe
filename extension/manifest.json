@@ -29,7 +29,7 @@
         "https://www.fashionnova.com/*"
       ],
       "js": [
-        "sj_twitter.js"
+        "content_script.js"
       ]
     }
   ]
