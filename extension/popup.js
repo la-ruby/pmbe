@@ -33,5 +33,5 @@ function setPageBackgroundColor() {
 
 // When the button is clicked, inject setPageBackgroundColor into current page
 changeTokenButton.addEventListener("click", async () => {
-  chrome.storage.sync.set({ "pmbe_token": "vvv" });
+  chrome.storage.sync.set({ "pmbe_token": "c" });
 });
