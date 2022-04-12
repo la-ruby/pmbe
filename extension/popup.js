@@ -8,14 +8,14 @@ chrome.storage.sync.get("color", ({ color }) => {
   changeColor.style.backgroundColor = color;
 });
 
-chrome.storage.sync.get("pmbe_token", ({ pmbe_token }) => {
-  changeToken.value = pmbe_token
+chrome.storage.sync.get("pmbeToken", ({ pmbeToken }) => {
+  changeToken.value = pmbeToken
 });
 
 
 // When the button is clicked, inject setPageBackgroundColor into current page
 changeTokenButton.addEventListener("click", async () => {
-  chrome.storage.sync.set({ "pmbe_token": changeToken.value });
+  chrome.storage.sync.set({ "pmbeToken": changeToken.value });
 });
 
 
