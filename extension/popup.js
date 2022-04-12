@@ -7,6 +7,11 @@ chrome.storage.sync.get("color", ({ color }) => {
   changeColor.style.backgroundColor = color;
 });
 
+chrome.storage.sync.get("pmbe_token", ({ pmbe_token }) => {
+  changeToken.value = pmbe_token
+});
+
+
 // When the button is clicked, inject setPageBackgroundColor into current page
 changeColor.addEventListener("click", async () => {
   let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
