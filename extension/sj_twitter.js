@@ -1,4 +1,4 @@
-setInterval(function () {
+// setInterval(function () {
   // console.log("D3BUG timer")
   let divs = document.querySelectorAll('.collection-list__product-tile')
   divs.forEach(function(item) {
@@ -18,7 +18,7 @@ setInterval(function () {
   })
 
 
-}, 2000);
+// }, 2000);
 
 
 setTimeout(function() {
