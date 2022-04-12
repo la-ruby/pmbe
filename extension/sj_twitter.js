@@ -1,8 +1,9 @@
 // setInterval(function () {
   // console.log("D3BUG timer")
   let divs = document.querySelectorAll('.collection-list__product-tile')
-  divs.forEach(function(item) {
     debugger
+  divs.forEach(function(item) {
+
     return
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://pmbe-backend.herokuapp.com/experiment", true);
