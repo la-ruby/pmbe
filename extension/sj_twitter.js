@@ -1,5 +1,5 @@
 setTimeout(function() {
-  alert('fired')
+  console.log('fired')
   let divs = document.querySelectorAll('.collection-list__product-tile')
   divs.forEach(function(item) {
     var xhr = new XMLHttpRequest();
@@ -14,7 +14,7 @@ setTimeout(function() {
     }
     xhr.send();
   })
-}, 2000)
+}, 1000)
 
 
 
