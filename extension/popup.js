@@ -17,5 +17,3 @@ chrome.storage.sync.get("pmbeToken", ({ pmbeToken }) => {
 changeTokenButton.addEventListener("click", async () => {
   chrome.storage.sync.set({ "pmbeToken": changeToken.value });
 });
-
-
