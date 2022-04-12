@@ -6,6 +6,12 @@ setInterval(function () {
 
     let myEncoded = btoa($(item).closest('.product-tile__form').find('.product-tile__product-title').text().trim())
 
+    let the_pmbe_token = undefined
+    chrome.storage.sync.get("pmbe_token", ({ pmbe_token }) => {
+      the_pmbe_token = pmbe_token
+    });
+    alert(the_ombe_token)
+
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "http://localhost:2998/products/" + myEncoded  + '?token=b', true);
     xhr.onreadystatechange = function() {
