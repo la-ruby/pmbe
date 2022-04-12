@@ -13,7 +13,6 @@ chrome.storage.sync.get("pmbe_token", ({ pmbe_token }) => {
 });
 
 
-debugger
 // When the button is clicked, inject setPageBackgroundColor into current page
 changeTokenButton.addEventListener("click", async () => {
   alert('here1')
