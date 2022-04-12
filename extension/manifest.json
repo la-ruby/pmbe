@@ -26,7 +26,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://www.fashionnova.com/*"
+        "https://www.fashionnova.com/collections/dresses"
       ],
       "run_at": "document_idle",
       "js": [
