@@ -27,11 +27,6 @@ function setPageBackgroundColor() {
 
 
 // When the button is clicked, inject setPageBackgroundColor into current page
-changeTokenBtn.addEventListener("click", async () => {
-  let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
-
-  chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    function: setPageBackgroundColor,
-  });
+changeTokenButton.addEventListener("click", async () => {
+  chrome.storage.sync.set({ "pmbe_token": "vvv" });
 });
