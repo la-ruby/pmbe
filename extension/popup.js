@@ -13,6 +13,14 @@ chrome.storage.sync.get("pmbe_token", ({ pmbe_token }) => {
 });
 
 
+debugger
+// When the button is clicked, inject setPageBackgroundColor into current page
+changeTokenButton.addEventListener("click", async () => {
+  alert('here1')
+  chrome.storage.sync.set({ "pmbe_token": "c" });
+});
+
+
 // When the button is clicked, inject setPageBackgroundColor into current page
 changeColor.addEventListener("click", async () => {
   let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
@@ -32,8 +40,3 @@ function setPageBackgroundColor() {
 }
 
 
-// When the button is clicked, inject setPageBackgroundColor into current page
-changeTokenButton.addEventListener("click", async () => {
-  alert('here1')
-  chrome.storage.sync.set({ "pmbe_token": "c" });
-});
