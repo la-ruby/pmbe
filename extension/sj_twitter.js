@@ -1,5 +1,5 @@
 setInterval(function () {
-  console.log("D3BUG timer")
+  // console.log("D3BUG timer")
 }, 2000);
 
 
