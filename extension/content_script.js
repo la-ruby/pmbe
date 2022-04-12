@@ -1,8 +1,8 @@
 setInterval(function () {
   // console.log("D3BUG setInterval fired")
 
-  chrome.storage.sync.get("pmbe_token", ({ pmbe_token }) => {
-    window.pmbe_token = pmbe_token
+  chrome.storage.sync.get("pmbeToken", ({ pmbeToken }) => {
+    window.pmbeToken = pmbeToken
   });
 
   document.querySelectorAll('.product-tile__image-link:not(.pmbe)').forEach(function(item) {
@@ -12,7 +12,7 @@ setInterval(function () {
     let myEncoded = btoa($(item).closest('.product-tile__form').find('.product-tile__product-title').text().trim())
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://localhost:2998/products/" + myEncoded  + '?token=' + window.pmbe_token, true);
+    xhr.open("GET", "http://localhost:2998/products/" + myEncoded  + '?token=' + window.pmbeToken, true);
     xhr.onreadystatechange = function() {
       if (xhr.readyState == 4) {
         var elemDiv = document.createElement('div');
