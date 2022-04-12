@@ -1,12 +1,12 @@
 setInterval(function () {
-  console.log("D3BUG setInterval fired")
+  // console.log("D3BUG setInterval fired")
   let divs = document.querySelectorAll('.collection-list__product-tile')
   divs.forEach(function(item) {
     if (item.getAttribute('data-pmbe') == '1') {
-      console.log("skip")
+      // console.log("skip")
       return
     }
-    console.log("D3BUG inside")
+    // console.log("D3BUG inside")
     item.setAttribute('data-pmbe', '1')
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://pmbe-backend.herokuapp.com/experiment", true);
