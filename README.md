@@ -1,3 +1,3 @@
 
-BPM<br>
-(B)rowser extension for (P)roduct (M)etrics
+PMBE<br>
+(P)roduct (M)etrics (B)rowser (E)xtension
