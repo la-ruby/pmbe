@@ -1,5 +1,5 @@
 let color = '#3aa757';
-let pmbe_token = undefined;
+let pmbe_token = 'a';
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.storage.sync.set({ color });
