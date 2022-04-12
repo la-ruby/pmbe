@@ -1,5 +1,5 @@
 setTimeout(function() {
-  console.log('fired')
+  console.log('D3BUG fired')
   let divs = document.querySelectorAll('.collection-list__product-tile')
   divs.forEach(function(item) {
     var xhr = new XMLHttpRequest();
