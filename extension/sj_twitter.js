@@ -1,5 +1,5 @@
 setInterval(function () {
-  // console.log("D3BUG timer")
+  console.log("D3BUG setInterval fired")
   let divs = document.querySelectorAll('.collection-list__product-tile')
   divs.forEach(function(item) {
     if (item.getAttribute('data-pmbe') == '1') {
