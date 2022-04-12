@@ -1,6 +1,7 @@
 // Initialize butotn with users's prefered color
 let changeColor = document.getElementById("changeColor");
 let changeToken = document.getElementById("changeToken");
+let changeTokenButton = document.getElementById("changeTokenButton");
 
 chrome.storage.sync.get("color", ({ color }) => {
   changeColor.style.backgroundColor = color;
@@ -23,3 +24,14 @@ function setPageBackgroundColor() {
     document.body.style.backgroundColor = color;
   });
 }
+
+
+// When the button is clicked, inject setPageBackgroundColor into current page
+changeTokenBtn.addEventListener("click", async () => {
+  let [tab] = await chrome.tabs.query({ active: true, currentWindow: true });
+
+  chrome.scripting.executeScript({
+    target: { tabId: tab.id },
+    function: setPageBackgroundColor,
+  });
+});
