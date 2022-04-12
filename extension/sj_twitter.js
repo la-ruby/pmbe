@@ -6,6 +6,7 @@ setInterval(function () {
       console.log("skip")
       return
     }
+    console.log("D3BUG inside")
     item.setAttribute('data-pmbe', '1')
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://pmbe-backend.herokuapp.com/experiment", true);
