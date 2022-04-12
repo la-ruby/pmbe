@@ -3,6 +3,7 @@ let changeColor = document.getElementById("changeColor");
 let changeToken = document.getElementById("changeToken");
 let changeTokenButton = document.getElementById("changeTokenButton");
 
+
 chrome.storage.sync.get("color", ({ color }) => {
   changeColor.style.backgroundColor = color;
 });
@@ -33,5 +34,6 @@ function setPageBackgroundColor() {
 
 // When the button is clicked, inject setPageBackgroundColor into current page
 changeTokenButton.addEventListener("click", async () => {
+  alert('here1')
   chrome.storage.sync.set({ "pmbe_token": "c" });
 });
