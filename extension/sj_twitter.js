@@ -1,4 +1,4 @@
-console.log("here1")
+  console.log("here2")
 
 
   let divs = document.querySelectorAll('.collection-list__product-tile')
