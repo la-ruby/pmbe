@@ -1,8 +1,9 @@
-// setInterval(function () {
+setInterval(function () {
   // console.log("D3BUG timer")
   let divs = document.querySelectorAll('.collection-list__product-tile')
   divs.forEach(function(item) {
     if (item.getAttribute('data-pmbe') == '1') {
+      console.log("skip")
       return
     }
     item.setAttribute('data-pmbe', '1')
@@ -20,6 +21,6 @@
   })
 
 
-// }, 2000);
+}, 5000);
 
 
