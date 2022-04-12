@@ -6,6 +6,7 @@ console.log("here1")
   // http://postman-echo.com/get?aaa=AAA
   // https://www.random.org/integers/?num=1&min=1&max=6&col=1&base=10&format=plain&rnd=new
 
+  alert(divs.length)
   divs.forEach(function(item) {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://www.random.org/integers/?num=1&min=1&max=6&col=1&base=10&format=plain&rnd=new", true);
