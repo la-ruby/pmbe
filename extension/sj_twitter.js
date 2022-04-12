@@ -1,6 +1,6 @@
 setTimeout(function() {
   console.log('fired')
-  let divs = document.querySelectorAll('.product-tile__image-line')
+  let divs = document.querySelectorAll('.collection-list__product-tile')
   divs.forEach(function(item) {
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://pmbe-backend.herokuapp.com/experiment", true);
@@ -14,7 +14,7 @@ setTimeout(function() {
     }
     xhr.send();
   })
-}, 5000)
+}, 2000)
 
 
 
