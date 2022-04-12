@@ -1,4 +1,5 @@
 setInterval(function () {
+  alert("herex")
   // console.log("D3BUG setInterval fired")
   document.querySelectorAll('.product-tile__image-link:not(.pmbe)').forEach(function(item) {
     // console.log("D3BUG overlaying")
