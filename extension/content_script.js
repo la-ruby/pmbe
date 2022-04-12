@@ -3,6 +3,9 @@ setInterval(function () {
   document.querySelectorAll('.product-tile__image-link:not(.pmbe)').forEach(function(item) {
     // console.log("D3BUG overlaying")
     item.classList.add('pmbe')
+
+    console.log($(item).closest('.product-tile__form').find('.product-tile__product-title').text())
+
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "http://localhost:2998/products/U3R1Y2sgSW4gVGhlIENpdHkgU2F0aW4gTWlkaSBEcmVzcyAtIFllbGxvdw==?token=a", true);
     xhr.onreadystatechange = function() {
