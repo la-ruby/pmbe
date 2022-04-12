@@ -14,7 +14,7 @@ setTimeout(function() {
     }
     xhr.send();
   })
-}, 2000)
+}, 5000)
 
 
 
