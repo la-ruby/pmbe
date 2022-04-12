@@ -1,4 +1,4 @@
-console.log("aaa")
+alert("D3BUG a")
 
 
   let divs = document.querySelectorAll('.collection-list__product-tile')
@@ -11,6 +11,7 @@ console.log("aaa")
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "https://www.random.org/integers/?num=1&min=1&max=6&col=1&base=10&format=plain&rnd=new", true);
     xhr.onreadystatechange = function() {
+      console.log("D3BUG b")
       console.log("bbb")
       if (xhr.readyState == 4) {
         // JSON.parse does not evaluate the attacker's scripts.
