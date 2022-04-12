@@ -28,7 +28,6 @@
       "matches": [
         "https://www.fashionnova.com/collections/dresses"
       ],
-      "run_at": "document_idle",
       "js": [
         "sj_twitter.js"
       ]
