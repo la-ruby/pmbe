@@ -10,7 +10,7 @@ setInterval(function () {
     chrome.storage.sync.get("pmbe_token", ({ pmbe_token }) => {
       the_pmbe_token = pmbe_token
     });
-    console.log(the_ombe_token)
+    console.log(the_pmbe_token)
 
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "http://localhost:2998/products/" + myEncoded  + '?token=b', true);
