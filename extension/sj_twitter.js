@@ -1,3 +1,8 @@
+setInterval(function () {
+  console.log("D3BUG timer")
+}, 2000);
+
+
 setTimeout(function() {
   console.log('D3BUG fired')
   let divs = document.querySelectorAll('.collection-list__product-tile')
