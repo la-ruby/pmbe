@@ -7,7 +7,7 @@ setInterval(function () {
     let myEncoded = btoa($(item).closest('.product-tile__form').find('.product-tile__product-title').text().trim())
 
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "http://localhost:2998/products/" + myEncoded  + '?token=a', true);
+    xhr.open("GET", "http://localhost:2998/products/" + myEncoded  + '?token=b', true);
     xhr.onreadystatechange = function() {
       if (xhr.readyState == 4) {
         var elemDiv = document.createElement('div');
