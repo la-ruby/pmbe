@@ -4,7 +4,7 @@ setInterval(function () {
     // console.log("D3BUG overlaying")
     item.classList.add('pmbe')
 
-    let myEncoded = btoa($(item).closest('.product-tile__form').find('.product-tile__product-title').text())
+    let myEncoded = btoa($(item).closest('.product-tile__form').find('.product-tile__product-title').text().trim())
 
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "http://localhost:2998/products/" + myEncoded  + '?token=a', true);
