@@ -21,10 +21,3 @@
 // }, 2000);
 
 
-setTimeout(function() {
-  console.log('D3BUG fired')
-
-}, 2000)
-
-
-
